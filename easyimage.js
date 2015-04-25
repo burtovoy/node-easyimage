@@ -275,12 +275,13 @@ exports.rescrop = function(options) {
     var args = [options.src]
     args.push('-flatten')
     args.push('-auto-orient')
-    args.push('-gravity')
-    args.push(options.gravity)
-    args.push('-resize')
-    args.push(options.width + 'x' + options.height + options.fill)
+    //args.push('-gravity')
+    //args.push(options.gravity)
     args.push('-crop')
     args.push(options.cropwidth + 'x'+ options.cropheight + '+' + options.x + '+' + options.y)
+    args.push('-resize')
+    args.push(options.width + 'x' + options.height + options.fill)
+
     if (options.quality) {
     	args.push('-quality')
     	args.push(options.quality)
