@@ -228,8 +228,8 @@ exports.crop = function(options) {
     var args = [options.src]
     args.push('-flatten')
     args.push('-auto-orient')
-    args.push('-gravity')
-    args.push(options.gravity)
+    //args.push('-gravity')
+    //args.push(options.gravity)
     args.push('-crop')
     args.push(options.cropwidth + 'x'+ options.cropheight + '+' + options.x + '+' + options.y)
     if (options.quality) {
